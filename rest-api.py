@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -6,6 +6,6 @@ app = Flask(__name__)
 def calculateChecksum():
     string = request.args.get('string')
     
-    return 'your string to hash: '+ string
+    return jsonify(string)
 
 app.run()
