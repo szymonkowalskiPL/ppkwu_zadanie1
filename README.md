@@ -1,0 +1,1 @@
+API checksum calculation for md5, crc32, sha1, sha256
